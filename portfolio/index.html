@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Profile.</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0c5ce99982.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/0c5ce99982.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="Anuj.png" class="logo"> -->
+          <div class="logo">Anuj</div>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hi, I'm <span>Anuj <br>Kumar</span>
+             from Sikar.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!------------about-------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="an.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Being a student i want to obtain a career in the field of
+              compueter science where i can strenghten my knowledge and skills
+              for the development of both the company and myself.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Developmet</span><br>HTML, CSS, JavaScript
+                </li>
+                <li>
+                  <span>Linux</span><br>System Administration
+                </li>
+                <li><span>Database</span><br />MySql</li>
+                <li><span>Programming  Language</span><br />Basic Java</li>
+                <li><span>Other</span><br />Git & Github</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Internship (System Administration)<br>(May-Aug 2023)</span><br />- RHCSA<br>- RHCE<br>- AWS Cloud.</li>
+                <li><span>Projects</span><br />- High Availability Website (AWS Cloud)<br>- Portfolio Website</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-Current</span><br />Master of Computer Applications
+                  at Poornima University, Jaipur.
+                </li>
+                <li>
+                  <span>2019-2022</span><br />Bachelor of Arts at Sekhawati
+                  University, Sikar.
+                </li>
+                <li>
+                  <span>2018-2019</span><br />12th at Bhartiya School, Sikar.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------Services------------------>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>I have learnt this skill in my college and improved by self to develop a good project using HTML, CSS, JavaScript.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-desktop"></i>
+            <h2>System Administration</h2>
+            <p>I am a REDHAT certified System Administrator (oct/23-oct/26).I worked on this in my internship of Web hosting and server management.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>My Sql</h2>
+            <p>I have learnt this skill in my college in RDBMS.I am able to work on structured and unstructured data sets.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------portfolio---------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="cl.jpg">
+            <div class="layer">
+              <h3>Social media app</h3>
+              <p>this is all about what i don't know that what is going here.</p>
+              <a href="#"><i class="fa-solid fa-desktop"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Home.jpg">
+            <div class="layer">
+              <h3>Anthing</h3>
+              <p>i dont know what should i put there.</p>
+              <a href="#"><i class="fa-solid fa-desktop"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="cl.jpg">
+            <div class="layer">
+              <h3>Abc</h3>
+              <p>this is nothing you don't need to look at this.</p>
+              <a href="#"><i class="fa-solid fa-desktop"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ------------contact----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-paper-plane"></i>anujak8764@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8764111711</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/anuj-kumar-7a2904266"><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.facebook.com%2Fanuj.thalor.94&e=AT0hl6nnr4v9qL7uCJg5c6Yr_nQsHfwgqImb4Z1EvnnDBN23FEE2ik86gpGrBqkuX2LL-kipCj8rwJxubCGn17PujtpG37Vkr8QBSvu-04AZhrjhCGTFGBg"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <a href="Anuj Kumar.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="text" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Anuj Kumar. Made whit &hearts;</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwHJoVhACC6PAL5c31bwpfehw1asQ5fkCX4pEhCI3gWBMYvur9NVOumcjAJ9YPTgnKqkA/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
